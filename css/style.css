@@ -52,6 +52,7 @@ body{
     margin: 0 auto;
 }
 .btn{
+    text-decoration: none;
     padding: 10px 24px;
     display: inline-block;
     background-color: #E02C6D;
@@ -59,16 +60,7 @@ body{
     font-size: 16px;
     font-weight: 700;
 }
-.btn a{
-    text-decoration: none;
-    color: #fff;
-    margin-right: 8px;
 
-}
-.btn i{
-    color: #fff;
-
-}
 /* 4. Nav Section */
 header{
     padding-top: 5px;
@@ -158,7 +150,10 @@ footer p{
     color: #D9DBE1;
 }
 .social-logo i{
-    font-size: 32px;
+    font-size: 17px;
     margin: 8px;
     color: #fff;
+    padding: 7.47px;
+    background-color: #22213C;
+    border-radius: 50%;
 }
