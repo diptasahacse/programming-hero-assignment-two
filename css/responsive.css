@@ -43,7 +43,8 @@
         width: 365px;
 
     }
-    .featured-image img {
+    .products {
+        margin: 0 10px;
         
     }
     .company-section{
