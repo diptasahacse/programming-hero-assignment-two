@@ -215,6 +215,7 @@ nav{
     margin-top: 50px;
     margin-right: 28px;
 }
+
 /* 8. Featured Product Section */
 .featured-product-container{
     display: grid;
@@ -258,6 +259,12 @@ nav{
 }
 .testimonial{
     padding: 20px;
+}
+.testimonial q::before,.testimonial q::after{
+    font-size: 30px;
+    color: #E02C6D;
+    line-height: 0px;
+
 }
 .customers-details{
     display: flex;
