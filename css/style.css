@@ -9,7 +9,6 @@ Date: 14th Jan 2022
 /*===================================================
 CSS INDEX
 ----------
-0. Custom Property
 1. Google Font
 2. Common CSS
 3. Reusable Component
@@ -17,23 +16,16 @@ CSS INDEX
 5. Hero Section
 6. Company Section
 7. Product Section
-7. Product Section
-9. Footer Section
+8. Featured Product Section
+9. Testimonial Section
+10. Footer Section
 
 
 ====================================================*/
 
-
-
-
 /* 1. Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 
-
-/* 0. Custom Property */
-/* :root{
-    --main-color: #3A3A3A;
-} */
 /* 2. Common CSS */
 *{
     margin: 0;
@@ -79,6 +71,10 @@ nav{
 .menu-area{
     display: flex;
 }
+.menu-area a:hover{
+    color: #E02C6D;
+
+}
 .menu ul{
     display: flex;
 }
@@ -95,8 +91,21 @@ nav{
     font-weight: 600;
     color: #3A3A3A;
 }
+.menu ul li:first-child a{
+    color: #E02C6D;
+}
 .top-icon{
     margin-left: 34px;
+
+}
+.top-icon a{
+    color: #3A3A3A;
+    margin-right: 5px;
+    display: inline-block;
+
+}
+.top-icon a:last-child{
+    margin-right: 0;
 
 }
 /* 5. Hero Section */
@@ -104,20 +113,29 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.hero-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .hero-text-section h1{
     font-size: 52px;
     font-weight: 700;
     line-height: 70px;
+    
 }
 .hero-text-section p{
     margin: 16px 0;
 }
 .hero-btn{
     padding: 10px 24px;
-    display: inline-block;
     background-color: #E02C6D;
     border-radius: 40px;
     color: #fff;
+    transition: .5s;
+}
+.hero-btn:hover{
+    transform: scale(1.07);
 }
 .hero-image-section{
     text-align: right;
@@ -134,8 +152,7 @@ nav{
     padding: 21px 0;
     border-left: 0;
     border-right: 0;
-    /* border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%); */
-    
+
 }
 .companies img{
     filter:grayscale(100%);
@@ -159,6 +176,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    margin: 0 30px;
 }
 .product{
     box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
@@ -192,15 +210,72 @@ nav{
     color: #FB8200;
     font-size: 16px;
 }
-
-
 .see-all-product-section{
     text-align: right;
     margin-top: 50px;
+    margin-right: 28px;
 }
+/* 8. Featured Product Section */
+.featured-product-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 96px;
+}
+.featured-image img{
+    width: 404px;
+    height: 270px;
+}
+.featured-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-des h2{
+    font-size: 38px;
+    font-weight: 700;
+}
+.featured-des p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.featured-btn{
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+}
+/* 9. Testimonial Section */
+.testimonial-section h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
 
-
-
+}
+.testimonials-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+.customers-details{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    align-items: center;
+}
+.customers-details img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.customer-info{
+    margin-left: 15px;
+}
+.customer-info p{
+    font-weight: 600;
+}
+.customer-info span{
+    font-size: 13px;
+}
 /* 9. Footer Section */
 footer{
     padding: 50px 0;
