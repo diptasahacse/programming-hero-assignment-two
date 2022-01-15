@@ -62,7 +62,9 @@ body{
 .btn span{
     margin-left: 7px;
 }
-
+section{
+    padding: 50px 0;
+}
 /* 4. Nav Section */
 header{
     padding-top: 5px;
@@ -136,10 +138,38 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
+.product{
+    box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    padding: 15px;
+    border-radius: 5px;
+}
+.product img{
+    width: 100%;
+}
+.product h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.product-price{
+    font-size: 24px;
+    font-weight: 400;
+}
 .product-rating{
     display: flex;
+    align-items: center;
 }
-
+.product-rating p{
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: bold;
+}
+.start-rating{
+    margin-right: 8px;
+}
+.start-rating .filled{
+    color: #FB8200;
+    font-size: 16px;
+}
 
 
 
