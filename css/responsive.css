@@ -78,8 +78,8 @@
 /* Responsive for 480px */
 @media only screen and (max-width: 480px) {
     .hero-text-section h1,.featured-des h2 {
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 40px;
     }
     .hero-image-section img{
         height: 240px;
@@ -93,11 +93,6 @@
     .featured-des {
         align-items: center;
       }
-    
-    
-}
-/* Responsive for 360px */
-@media only screen and (max-width: 360px) {
     
     
 }
